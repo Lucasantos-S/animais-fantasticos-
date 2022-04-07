@@ -17,4 +17,4 @@ export default function initAccordion() {
     });
   }
 }
-console.log('ok');
+
