@@ -15,4 +15,4 @@ dropownMenu.forEach((menu) => {
   ["touchstart", "click"].forEach((userEvent) => {
     menu.addEventListener(userEvent, handleClick);
   });
-});
+})
