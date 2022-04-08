@@ -1,4 +1,4 @@
-export default function initAccordion() {
+export default class initAccordion() {
   const accordionlist = document.querySelectorAll(
     '[data-anime="accordion"] dt'
   );
