@@ -11,7 +11,7 @@ export default class ScrollSuave {
     } else {
       this.options = options;
     }
-    this.scrollToSection = this.scrollToSection.bind(this)
+    this.scrollToSection = this.scrollToSection.bind(this);
   }
 
   //adiciona o scrol suave com a propriedade scrollIntoView
@@ -29,9 +29,9 @@ export default class ScrollSuave {
   }
 
   init() {
-    if(this.linksInternos.length) {
+    if (this.linksInternos.length) {
       this.addLinkEvent();
     }
-    return this
+    return this;
   }
 }
