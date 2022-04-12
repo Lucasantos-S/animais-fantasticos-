@@ -1,4 +1,4 @@
-import initAnimaNumeros from "./anima-numeros.js";
+import AnimaNumeros from "./anima-numeros.js";
 
 export default function fectAnimais() {
   function createAnimal(animal) {
@@ -16,12 +16,13 @@ export default function fectAnimais() {
         const divAnimal = createAnimal(animal);
         numerosGrid.appendChild(divAnimal);
       });
+      const animaNumeros = new AnimaNumeros("[data-numero]", ".numeros", "ativo");
+      animaNumeros.init();
     } catch (erro) {
       const numerosGrid = document.querySelector(".numeros-grid");
       numerosGrid.innerHTML = `<span data-numero>Não foi possivel carregar os valores</span>`;
     }
   }
-  initAnimaNumeros();
-
+  
   fetchAnimais("./animaisapi.json");
 }
