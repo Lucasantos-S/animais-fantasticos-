@@ -2,6 +2,7 @@ export default function fecthBitcoin() {}
 
 async function bitcoin(url) {
   try {
+    console.log(url);
     const bitcoinResponse = await fetch(url);
     const bitcoinJson = await bitcoinResponse.json();
     const bitcoinBRL = bitcoinJson.BRL;
