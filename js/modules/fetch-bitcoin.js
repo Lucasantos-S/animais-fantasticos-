@@ -1,6 +1,4 @@
-export default function fecthBitcoin() {}
-
-async function bitcoin(url) {
+export default async function FecthBiticoin(url) {
   try {
     const bitcoinResponse = await fetch(url);
     const bitcoinJson = await bitcoinResponse.json();
@@ -12,4 +10,4 @@ async function bitcoin(url) {
   }
 }
 //
-bitcoin("https://blockchain.info/ticker");
+

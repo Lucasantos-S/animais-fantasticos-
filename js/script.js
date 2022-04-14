@@ -35,6 +35,6 @@ tooltip.init();
 animationScroll();
 initDropdownMenu();
 initMenuMobile();
-FecthBiticoin();
 
+FecthBiticoin("https://blockchain.info/ticker");
 fetchAnimais("../../animaisapi.json", ".numeros-grid");
