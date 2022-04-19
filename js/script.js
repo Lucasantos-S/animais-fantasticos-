@@ -3,7 +3,7 @@ import Accordion from "./modules/accordion.js";
 import TabNav from "./modules/tabnav.js";
 import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
-import initDropdownMenu from "./modules/dropdown-menu.js";
+import DropdownMenu from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
 import fetchAnimais from "./modules/fetch-animais.js";
 import FecthBiticoin from "./modules/fetch-bitcoin.js";
@@ -36,8 +36,9 @@ const scrollanima = new ScrollAnima('[data-anime="scroll"]');
 
 scrollanima.init();
 
+const dropdownMenu = new DropdownMenu("[data-dropdown");
+dropdownMenu.init();
 
-initDropdownMenu();
 initMenuMobile();
 
 FecthBiticoin("https://blockchain.info/ticker");
