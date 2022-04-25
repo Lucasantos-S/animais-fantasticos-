@@ -47,16 +47,7 @@
 @media (max-width: 700px) {
    [data-dropdown] .dropdown-menu {
         display: block;
-    }
-
-    .dropdown-menu::before {
-        display: none;
-    }
-    [data-dropdown]:hover .dropdown-menu,
-    [data-dropdown].ativo .dropdown-menu {
-    display: block;
-    animation: none;
-}
-        
+        animation: show-up .9s forwards;
+    }   
 }
 
