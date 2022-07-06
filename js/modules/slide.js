@@ -133,6 +133,7 @@ export class Slide {
     }, 1000);
   }
 
+
   addResizeEvent() {
     window.addEventListener("resize", this.onResize);
   }
